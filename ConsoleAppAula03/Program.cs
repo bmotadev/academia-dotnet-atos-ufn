@@ -148,20 +148,20 @@
              * Área do triangulo = (base * altura) / 2; 
              * Teste se a base ou a altura digitada não foi igual a zero.
              * **/
-            Console.WriteLine("Digite o valor da base:");
-            double numeroBase = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Digite o valor da base:");
+            //double numeroBase = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite o valor da altura:");
-            double numeroAltura = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Digite o valor da altura:");
+            //double numeroAltura = double.Parse(Console.ReadLine());
 
-            if(numeroAltura != 0 && numeroBase != 0) {
-                double areaDoTriangulo = (numeroBase * numeroAltura) / 2;
-                Console.WriteLine($"A área do triangulo é de: {areaDoTriangulo:f2}");
-            }
-            else
-            {
-                Console.WriteLine("Digite valores diferente de 0");
-            }
+            //if(numeroAltura != 0 && numeroBase != 0) {
+            //    double areaDoTriangulo = (numeroBase * numeroAltura) / 2;
+            //    Console.WriteLine($"A área do triangulo é de: {areaDoTriangulo:f2}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Digite valores diferente de 0");
+            //}
 
             //------------------------------------------------------
             /*
@@ -169,6 +169,37 @@
              * 
              * Escrever um algoritmo para ler quatro valores, calcular a sua média, e escrever na tela os que são superiores à média.
              * **/
+
+            Console.WriteLine("Informe o primeiro número:");
+            double numeroUm = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o segundo número:");
+            double numeroDois = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o terceiro número:");
+            double numeroTres = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Informe o quarto número:");
+            double numeroQuatro = double.Parse(Console.ReadLine());
+
+            double media = (numeroUm + numeroDois + numeroTres + numeroQuatro)/4;
+
+            Console.WriteLine($"Media é:{media:f1}");
+
+            if (numeroUm > media)
+            {
+                Console.WriteLine($"{numeroUm:f1} superior a media");
+            } if (numeroDois > media)
+            {
+                Console.WriteLine($"{numeroDois:f1} superior a media");
+            } if (numeroTres > media)
+            {
+                Console.WriteLine($"{numeroTres:f1} superior a media");
+            } if (numeroQuatro > media)
+            {
+                Console.WriteLine($"{numeroQuatro:f1} superior a media");
+            }
+
         }
     }
 }
