@@ -75,33 +75,67 @@
              * Acima de 1400 = 10%
              * **/
 
-            Console.WriteLine("Informe o salario");
-            double salario = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Informe o salario");
+            //double salario = double.Parse(Console.ReadLine());
 
-            double bonusSalario = 0, valorDoAumento = 0;
-            int porcentagem = 0;
-            if(salario <= 900.00)
+            //double bonusSalario = 0, valorDoAumento = 0;
+            //int porcentagem = 0;
+            //if(salario <= 900.00)
+            //{
+            //    porcentagem = 5;
+            //    valorDoAumento = salario * 0.05;
+            //    bonusSalario = salario + valorDoAumento;
+            //}
+            //if(salario > 900.00 && salario < 1400.00 )
+            //{
+            //    porcentagem = 8;
+            //    valorDoAumento = salario * 0.08;
+            //    bonusSalario = salario + valorDoAumento;
+            //}
+            //if(salario >= 1400.00)
+            //{
+            //    porcentagem = 10;
+            //    valorDoAumento = salario * 0.10;
+            //    bonusSalario = salario + valorDoAumento;
+            //}
+
+            //Console.WriteLine($"\nSalário atual: R${salario:f2}.\nAumento de {porcentagem}% no valor de: R${valorDoAumento:f2}.\nNovo salário: R${bonusSalario:f2}");
+
+            /*
+             * Dados três números, verificar se eles podem representar as medidas dos lados de um triângulo e, classificar o triângulo em equilátero, isósceles ou escaleno.
+             * Para que três números representem os lados de um triângulo é necessário que cada um deles seja menor que a soma dos outros dois.
+             * Um triângulo é equilátero se tem os três lados iguais,  isósceles se tem apenas dois lados iguais e escaleno se tem todos os lados distintos.
+             * **/
+
+            Console.WriteLine("Digite o primeiro número");
+            int numeroUm = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o segundo número:");
+            int numeroDois = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o terceiro número:");
+            int numeroTres = int.Parse(Console.ReadLine());
+
+            if ((numeroUm < (numeroDois + numeroTres)) && (numeroDois < (numeroUm + numeroTres)) && (numeroTres < (numeroUm + numeroDois)))
             {
-                porcentagem = 5;
-                valorDoAumento = salario * 0.05;
-                bonusSalario = salario + valorDoAumento;
+                if(numeroUm == numeroDois && numeroUm == numeroTres && numeroDois == numeroTres)
+                {
+                    Console.WriteLine("Triângulo equilátero");
+                }
+                else if(numeroUm == numeroDois || numeroUm == numeroTres || numeroDois == numeroTres)
+                {
+                    Console.WriteLine("Triangulo isósceles");
+                }
+                else if(numeroUm != numeroDois && numeroUm != numeroTres && numeroTres != numeroDois)
+                {
+                    Console.WriteLine("Triangulo escaleno");
+                }
+
             }
-            if(salario > 900.00 && salario < 1400.00 )
+            else
             {
-                porcentagem = 8;
-                valorDoAumento = salario * 0.08;
-                bonusSalario = salario + valorDoAumento;
+                Console.WriteLine("Não é um triangulo");
             }
-            if(salario >= 1400.00)
-            {
-                porcentagem = 10;
-                valorDoAumento = salario * 0.10;
-                bonusSalario = salario + valorDoAumento;
-            }
-
-            Console.WriteLine($"\nSalário atual: R${salario:f2}.\nAumento de {porcentagem}% no valor de: R${valorDoAumento:f2}.\nNovo salário: R${bonusSalario:f2}");
-
-
         }
     }
 }
