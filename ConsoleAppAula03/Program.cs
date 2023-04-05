@@ -66,6 +66,7 @@
             //    Console.WriteLine("Entrei como verdadeiro na 5");
             //}
 
+            //------------------------------------------------------
             // Exercicio
             /*
              * Considere que será concedio um bônus aos trabalhadores de uma empresa, conforme o salario atual do vendedor, descrito abaixo.
@@ -101,41 +102,73 @@
 
             //Console.WriteLine($"\nSalário atual: R${salario:f2}.\nAumento de {porcentagem}% no valor de: R${valorDoAumento:f2}.\nNovo salário: R${bonusSalario:f2}");
 
+
+            //------------------------------------------------------
             /*
              * Dados três números, verificar se eles podem representar as medidas dos lados de um triângulo e, classificar o triângulo em equilátero, isósceles ou escaleno.
              * Para que três números representem os lados de um triângulo é necessário que cada um deles seja menor que a soma dos outros dois.
              * Um triângulo é equilátero se tem os três lados iguais,  isósceles se tem apenas dois lados iguais e escaleno se tem todos os lados distintos.
              * **/
 
-            Console.WriteLine("Digite o primeiro número");
-            int numeroUm = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Digite o primeiro número");
+            //int numeroUm = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite o segundo número:");
-            int numeroDois = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Digite o segundo número:");
+            //int numeroDois = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Digite o terceiro número:");
-            int numeroTres = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Digite o terceiro número:");
+            //int numeroTres = int.Parse(Console.ReadLine());
 
-            if ((numeroUm < (numeroDois + numeroTres)) && (numeroDois < (numeroUm + numeroTres)) && (numeroTres < (numeroUm + numeroDois)))
-            {
-                if(numeroUm == numeroDois && numeroUm == numeroTres && numeroDois == numeroTres)
-                {
-                    Console.WriteLine("Triângulo equilátero");
-                }
-                else if(numeroUm == numeroDois || numeroUm == numeroTres || numeroDois == numeroTres)
-                {
-                    Console.WriteLine("Triangulo isósceles");
-                }
-                else if(numeroUm != numeroDois && numeroUm != numeroTres && numeroTres != numeroDois)
-                {
-                    Console.WriteLine("Triangulo escaleno");
-                }
+            //if ((numeroUm < (numeroDois + numeroTres)) && (numeroDois < (numeroUm + numeroTres)) && (numeroTres < (numeroUm + numeroDois)))
+            //{
+            //    if(numeroUm == numeroDois && numeroUm == numeroTres && numeroDois == numeroTres)
+            //    {
+            //        Console.WriteLine("Triângulo equilátero");
+            //    }
+            //    else if(numeroUm == numeroDois || numeroUm == numeroTres || numeroDois == numeroTres)
+            //    {
+            //        Console.WriteLine("Triangulo isósceles");
+            //    }
+            //    else if(numeroUm != numeroDois && numeroUm != numeroTres && numeroTres != numeroDois)
+            //    {
+            //        Console.WriteLine("Triangulo escaleno");
+            //    }
 
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Não é um triangulo");
+            //}
+
+            //------------------------------------------------------
+            /*
+             * Exercicio
+             * 
+             * Faça um algoritmo para calcular e mostrar a área de um triângulo a partir dos valores da base e da altura lidos pelo teclado: 
+             * Área do triangulo = (base * altura) / 2; 
+             * Teste se a base ou a altura digitada não foi igual a zero.
+             * **/
+            Console.WriteLine("Digite o valor da base:");
+            double numeroBase = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor da altura:");
+            double numeroAltura = double.Parse(Console.ReadLine());
+
+            if(numeroAltura != 0 && numeroBase != 0) {
+                double areaDoTriangulo = (numeroBase * numeroAltura) / 2;
+                Console.WriteLine($"A área do triangulo é de: {areaDoTriangulo:f2}");
             }
             else
             {
-                Console.WriteLine("Não é um triangulo");
+                Console.WriteLine("Digite valores diferente de 0");
             }
+
+            //------------------------------------------------------
+            /*
+             * Exercicio
+             * 
+             * Escrever um algoritmo para ler quatro valores, calcular a sua média, e escrever na tela os que são superiores à média.
+             * **/
         }
     }
 }
