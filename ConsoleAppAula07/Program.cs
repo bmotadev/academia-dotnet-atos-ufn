@@ -17,7 +17,6 @@
                 }
 
 
-
                 int soma = 0;
                 int contagem = 0;
 
