@@ -11,9 +11,20 @@ namespace ConsoleAppAula11Poo
         public string nome;
         public int idade;
 
+        public Pessoa()
+        {
+
+        }
+
+        public Pessoa(string nome, int idade)
+        {
+            this.nome = nome;
+            this.idade = idade;
+        }
+
         public void exibeDados()
         {
-            Console.WriteLine("Nome: "+ this.idade);
+            Console.WriteLine("Nome: "+ this.nome);
             Console.WriteLine("Idade: "+ this.idade);
         }
     }

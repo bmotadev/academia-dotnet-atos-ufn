@@ -16,8 +16,9 @@ namespace ConsoleAppAula11Poo
             p.idade = int.Parse(Console.ReadLine());
 
             //abaixo estou mostrando dados
-            Console.WriteLine("A pessoa instanciada é: "+p.nome);
-            Console.WriteLine("E tem" +p.idade+"anos");
+            //Console.WriteLine("A pessoa instanciada é: "+p.nome);
+            //Console.WriteLine("E tem" +p.idade+"anos");
+            p.exibeDados();
         }
     }
 }
