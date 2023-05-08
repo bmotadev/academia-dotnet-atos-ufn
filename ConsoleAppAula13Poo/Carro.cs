@@ -45,7 +45,45 @@ namespace ConsoleAppAula13Poo
             }
             set
             {
-                ano = value;
+                if (value > 0)
+                {
+                    ano = value;
+                }
+                
+            }
+        }
+
+        public Motor Motor
+        {
+            get
+            {
+                return m;
+            }
+            set 
+            { 
+                m = value; 
+            }
+        }
+
+        public void LigarCarro()
+        {
+            if(!m.Ligado) 
+            {
+                m.LigarMotor();
+                Console.WriteLine("O carro ligou");
+            }
+            else
+            {
+                Console.WriteLine("O carro está ligado;");
+            }
+        }
+
+        public void DesligarCarro()
+        {
+            if(m.Ligado)
+            {
+                m.DesligarMotor();
+                Console.WriteLine("O carro desligou");
             }
         }
     }

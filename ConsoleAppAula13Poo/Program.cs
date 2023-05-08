@@ -17,15 +17,15 @@
 
 
 
-            Pessoa p;
-            p = new Pessoa();
-            Console.WriteLine("Digite o nome: ");
-            string nome = Console.ReadLine();
-            p.Nome = nome;
+            //Pessoa p;
+            //p = new Pessoa();
+            //Console.WriteLine("Digite o nome: ");
+            //string nome = Console.ReadLine();
+            //p.Nome = nome;
 
-            string nomeRetornado;
-            nomeRetornado =  p.Nome;
-            Console.WriteLine("Nome: " + nomeRetornado);
+            //string nomeRetornado;
+            //nomeRetornado =  p.Nome;
+            //Console.WriteLine("Nome: " + nomeRetornado);
         }
     }
 }
