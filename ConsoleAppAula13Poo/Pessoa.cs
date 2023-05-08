@@ -22,5 +22,18 @@ namespace ConsoleAppAula13Poo
             this.idade = idade;
             Console.WriteLine("Idade: " + idade);
         }
+
+        public Pessoa()
+        {
+            //this.nome = "Astolfo";
+        }
+
+
+
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+        }
     }
 }
