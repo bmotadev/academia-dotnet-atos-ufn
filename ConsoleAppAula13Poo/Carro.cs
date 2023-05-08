@@ -85,6 +85,10 @@ namespace ConsoleAppAula13Poo
                 m.DesligarMotor();
                 Console.WriteLine("O carro desligou");
             }
+            else
+            {
+                Console.WriteLine("O carro já está desligado");
+            }
         }
     }
 }
