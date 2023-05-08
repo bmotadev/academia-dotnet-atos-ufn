@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int idade;
+            string nome;
+            Pessoa p;
+
+            Console.WriteLine("Digite o nome e idade: ");
+            nome = Console.ReadLine();
+            idade = int.Parse(Console.ReadLine());
+            p = new Pessoa(nome, idade);
+            p.nome = "Astolfo";
+            Console.WriteLine("Nome: " + p.nome);
         }
     }
 }
